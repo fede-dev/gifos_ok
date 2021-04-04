@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../Home/assets/gifOF_logo.png">
+    <link rel="stylesheet" href="styles/v-style.css">
+    <title>Gif.OS</title>
+</head>
+
+<body>
+    <header class="header">
+        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </header>
+
+    <a href="../index.html"><img class="arrow" src="../Home/assets/arrow.svg" alt="arrow"></a>
+    <img id="logoGif" class="logo" src="../Home/assets/gifOF_logo.png" alt="logo">
+
+
+    <div class="contenedor-instrucciones">
+
+        <div class="hdr-intrucciones">Crear Guifos</div>
+
+        <div class="contenedor-texto">
+            <img src="../Home/assets/window_img.png" alt="disquet">
+
+            <div class="intrucciones-texto">
+                <p class="titulo">Aquí podrás crear tus propios guifos</p><br>
+                <p class="texto">Crear tu <strong>guifo</strong> es muy fácil, graba cualquier imagen con tu cámara y
+                    obtén guifos
+                    personalizados. Los pasos para crear tu guifo son:
+                    <br><br>
+                    <strong>1)</strong> Dar permisos de acceso a la cámara (sólo por el tiempo de uso) <br>
+                    <strong>2)</strong> Capturar tu momento guifo<br>
+                    <strong>3)</strong> Revisar el momento<br>
+                    <strong>4)</strong> Listo para subir y compartir!<br><br>
+                    ¿Quieres comenzar a crear tu <strong>guifo</strong> ahora?
+                </p><br>
+
+                <div class="botones">
+                    <a href="../index.html" class="btn-cancelar">Cancelar</a>
+                    <button id="botonComenzar" class="btn-comenzar">Comenzar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="ventanaDos">
+        <header>
+            <p id="textHeader">Un Chequeo Antes de Empezar</p>
+            <img src="../Home/assets/button3.svg" alt="x">
+        </header>
+        <div id="haciendoguif">
+            <video id="video" class="pantalla-video"></video>
+            <img class="videoPreview" id="videoPreview" src="." alt="video no preview">
+
+            <div class="contencontylisto">
+
+                <p class="contador" onload="carga()">
+                    <span>00:</span>
+                    <span>00:</span>
+                    <span>00:</span>
+                    <span id="segundos">00</span>
+                </p>
+
+                <div id="botonesStarted" class="botonesStarted">
+                    <button class="botoncamara btncomparte"><img id="imgcamaritabtn" class="imgbtn"
+                            src="../Home/assets/camera.svg" alt="x"></button>
+                    <button class="botoncapturar btncomparte">Capturar</button>
+                </div>
+
+                <div id="botonesStopped" class="botonesStopped" onclick="detener()">
+                    <button class="botonfilma btncomparte2"><img class="imgbtn" src="../Home/assets/recording.svg"
+                            alt="x"></button>
+                    <button class="botonlisto btncomparte2">Listo</button>
+                </div>
+
+                <div id="repitoOsubo" class="repitoOsubo">
+                    <a href="../CrearGuifos/CrearGuifos.html" id="repitoCaptura" class="repitoCaptura">Repetir
+                        Captura</a>
+                    <button id="suboGuifo" class="suboGuifo" onclick="setInterval(`barraProgresa()`,100)">Subir
+                        Guifo</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="blocksubiendoguif" class="blocksubiendoguif">
+
+            <div class="containerflex">
+                <img src="../Home/assets/globe_img.png" alt="globo">
+                <span class="span1">Estamos subiendo tu guifo…</span>
+                <progress value=0 max=100 id="barra"></progress>
+                <span class="span2">Tiempo restante: <s>38 años</s> algunos minutos</span>
+            </div>
+
+            <a href="../CrearGuifos/CrearGuifos.html" class="botonCancelarGif">Cancelar</a>
+
+        </div>
+    </div>
+
+    <div class="ventanaTres">
+        <header>
+            <p>Guifo Subido Con Éxito</p>
+            <img src="../Home/assets/button3.svg" alt="x">
+        </header>
+
+        <div class="flexgifsubido">
+            <img id="gifOpacity" class="gifOpacity" src="." alt="no gif">
+
+            <div class="bloqueFuncional">
+                <p class="tituwind3">Guifo creado con éxito</p>
+                <button class="copiarEnlace btnsfuncionale">Copiar Enlace Guifo</button>
+                <button class="descargarGuifo btnsfuncionale">Descargar Guifo</button>
+            </div>
+
+            <a href="../index.html">Listo</a>
+        </div>
+
+    </div>
+
+    <div class="hdr-misguifos">Mis Guifos:</div>
+
+
+
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+
+    <script src="javascript/v-script1.js"></script>
+</body>
+
+</html>

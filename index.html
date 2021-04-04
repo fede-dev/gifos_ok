@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Home/assets/gifOF_logo.png">
+    <link rel="stylesheet" href="Home/styles/style.css">
+    <title>Gifos</title>
+</head>
+
+<body id="body">
+    <header class="header">
+        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </header>
+    <div class="main">
+        <div class="menu">
+            <a href="index.html"><img id="logo" src="Home/assets/gifOF_logo.png" alt="logo"></a>
+            <div class="navbar">
+                <a id="botoncrearguifos" class="btn-crear-guifos btns-menu" href="CrearGuifos/CrearGuifos.html">Crear
+                    Guifos</a>
+                <nav class="tema">
+                    <div id="tema-plegado" class="tema-plegado">
+                        <a class="aDeBotones aDeCrearGifos"></a><button class="btn-elegir-tema btns-menu">Elegir
+                            tema</button>
+                        <button class="btn-drop btns-menu"><img class="drop-forward" src="Home/assets/dropdown.svg"
+                                alt="drop"></button>
+                    </div>
+                    <div id="tema-desplegado" class="tema-desplegado-none">
+                        <button class="botones btn1"><U>S</U>ailor Day</button>
+                        <button class="botones btn2"><U>S</U>ailor Night</button>
+                    </div>
+                </nav>
+                <span><a id="misGuifos" class="aDeBotones misGuifos" href="#"><U>M</U>is Guifos</a></span>
+            </div>
+        </div>
+        <div class="seccionVersatil">
+            <div class="contenedorOculto">
+                <div class="contenedorBusquedaFocus">
+                    <div class="contenedor-resultados">
+                        <div class="hdr-buscar">
+                            <span>Buscar</span>
+                        </div>
+                        <div class="contenedor-buscador">
+                            <input type="text" id="busquedaUsuario"
+                                placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                            <button id="boton-buscar" class="boton-lupa-busca">
+                                <img class="lupa" src="Home/assets/lupa_inactive.svg" alt="lupa">Buscar
+                            </button>
+                        </div>
+                        <div id="tresResultadosFocus" class="tresResultadosFocusNone">
+                        </div>
+                    </div>
+                </div>
+                <p id="tituloResultado" class="tituloResultado-none"> </p>
+                <div class="despuesDeBuscar">
+                </div>
+                <div class="antesDeBuscar">
+                    <p class="suge-tende">Hoy te sugerimos:</p>
+                    <div class="sugerencias">
+                    </div>
+                    <p class="suge-tende">Tendencias:</p>
+                    <div class="tendencias"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Home/javascript/script.js"></script>
+</body>
+
+</html>
